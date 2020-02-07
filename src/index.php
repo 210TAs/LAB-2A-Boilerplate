@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'php/settings.php';
+include 'config/settings.php';
 $_SESSION['test'] = "Hello World";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
