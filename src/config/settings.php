@@ -1,12 +1,12 @@
 <?php
-// YOU WILL NEED TO CREATE A DATABASE VIA
-// YOUR MANAGEMENT TOOL OF CHOICE FIRST.
 
-// ALSO, FEEL FREE TO CREATE A LESS-PRIVILEGED USER AS WELL
+// SWITCH THESE BEFORE YOUR LAST PUSH BEFORE TESTING ON YOUR PRODUCTION ENVIRONMENT
+$servername = 'mariadb';
+// $servername = 'localhost';
 
-$servername = "mariadb"; // DON'T CHANGE THIS
-$username = "admin";
-$password = "changeme";
-$dbname = "todo"; // YOUR DB GOES HERE
+// THESE NEED TO MATCH THE VALUES IN docker-compose.yml
+$mysql_user = 'admin';
+$mysql_password = 'changeme';
+$mysql_database = 'todo';
 
 ?>
