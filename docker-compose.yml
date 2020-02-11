@@ -19,14 +19,13 @@ services:
       - 3306:3306
     restart: always
     environment:
-
       MYSQL_ALLOW_EMPTY_PASSWORD: "no"
       MYSQL_ROOT_PASSWORD: toor
 
       # THESE NEED TO MATCH THE VALUES IN settings.php
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: changeme
-      MYSQL_DATABASE: todo
+      MYSQL_USER: ""
+      MYSQL_PASSWORD: ""
+      MYSQL_DATABASE: ""
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
